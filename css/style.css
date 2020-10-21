@@ -3,11 +3,6 @@
   padding: 0px;
 }
 
-/* .fonts-temp {
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Playfair Display', serif;
-} */
-
 .clearfix:after {
   content: "";
   display: table;
@@ -19,18 +14,26 @@ html {
   overflow-x: hidden;
 }
 
+.body {
+  color: #000;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 12px 26px;
-  background-color: yellow;
+  background-color: #fff;
   z-index: 80;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  -webkit-boxshadow: 0px 8px 20px -20px #000;
+  -moz-boxshadow: 0px 8px 20px -20px #000;
+  -o-boxshadow: 0px 8px 20px -20px #000;
+  box-shadow: 0px 8px 20px -20px #000;
 }
 
 .logo {
@@ -42,13 +45,14 @@ html {
 }
 
 .logo img {
-  height: 3.5rem;
+  height: 2.5rem;
   width: auto;
 }
 
 .hamburger-menu img {
   width: 32px;
   height: auto;
+  margin-top: 2px;
 }
 
 .navbar-items {
@@ -63,7 +67,7 @@ html {
   color: #000;
   display: block;
   float: left;
-  padding: 0 20px;
+  padding: 0 15px;
   line-height: 3rem;
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
@@ -96,6 +100,58 @@ html {
   margin-top: 12px;
 }
 
+.banner-hero {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background-image: url("../images/Banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-body {
+  position: absolute;
+  top: 50%;
+  /* margin-top: -150px; */
+  margin-top: -10rem;
+  padding: 0 2.5rem;
+}
+
+.hero-body h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-body p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-body p.sub-heading{
+  opacity: 0.6;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.hero-body p a img{
+  height: 1.5rem;
+  width: auto;
+}
+
+
 
 
 
@@ -106,7 +162,13 @@ html {
 
 
 @media (min-width: 768px) {
-  
+  .header {
+    padding: 12px 52px;
+  }
+
+  .hero-body {
+    padding: 0 115px;
+  }
 }
 
 
@@ -118,6 +180,15 @@ html {
   .hamburger-menu {
     display: none;
   }
+
+  .logo img {
+    height: 3.5rem;
+    width: auto;
+  }
+
+  .hero-body {
+    margin-top: -6rem;
+  }
 }
 
 
@@ -125,9 +196,21 @@ html {
   .header {
     padding: 20px 115px;
   }
+
+  .hero-body {
+    padding: 0 200px;
+  }
+
+  .hero-body h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 
 @media (min-width: 1440px) {
-
+  .header {
+    padding: 20px 160px;
+  }
 }

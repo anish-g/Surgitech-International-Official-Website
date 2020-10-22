@@ -139,7 +139,7 @@ html {
 }
 
 .hero-body p.sub-heading{
-  color: #1569B5;
+  color: #083578;
   font-style: italic;
   margin-bottom: 1.5rem;
 }
@@ -208,7 +208,7 @@ html {
 }
 
 .services {
-  background-color: #e9f6fc;
+  background-color: rgba(37, 170, 226, 0.1);
 }
 
 .services-wrapper {
@@ -468,7 +468,78 @@ textarea.form-input {
   background-image: linear-gradient(to right,#379F23,#1569B5);
 }
 
+.footer {
+  background-color: rgba(37, 170, 226, 0.1);
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: normal;
+  padding: 3rem 2.5rem;
+}
 
+.footer-company-info{
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-content {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-contact {
+  float: left;
+  width: 100%;
+}
+
+.footer-head {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  height: 3.5rem;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.fb-logo {
+  height: 2rem;
+  width: auto;
+  margin-top: 15px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.foot-content {
+  float: left;
+  width: calc(50% - 10px);
+}
+
+.foot-content:first-child {
+  margin-right: 20px;
+}
+
+.copyright {
+  background-color: #083578;
+  padding: 20px 2.5rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
 
 
 
@@ -531,6 +602,14 @@ textarea.form-input {
     float: right;
     width: calc(50% - 20px);
   }
+
+  .footer {
+    padding: 62px 115px;
+  }
+
+  .copyright {
+    padding: 20px 115px;
+  }
 }
 
 
@@ -582,6 +661,33 @@ textarea.form-input {
   
   .service:first-child {
     margin-left: 0px;
+  }
+
+  .footer-company-info{
+    float: left;
+    width: calc(30% - 13.33px);
+    margin-right: 20px;
+  }
+  
+  .footer-content {
+    float: left;
+    width: calc(50% - 13.33px);
+    margin-right: 20px;
+  }
+  
+  .footer-contact {
+    float: left;
+    width: calc(20% - 13.33px);
+  }
+
+  .copyright-info,
+  .designer-info {
+    float: left;
+    width: 50%;
+  }
+
+  .designer-info {
+    text-align: right;
   }
   
 }
@@ -660,6 +766,14 @@ textarea.form-input {
   .form-first-row .input-class:first-child {
     margin-right: 26px;
   }
+
+  .footer {
+    padding: 62px 200px;
+  }
+
+  .copyright {
+    padding: 20px 200px;
+  }
 }
 
 
@@ -716,5 +830,13 @@ textarea.form-input {
   
   .contact-us .section {
     padding: 0 120px;
+  }
+
+  .footer {
+    padding: 62px 280px;
+  }
+
+  .copyright {
+    padding: 20px 280px;
   }
 }

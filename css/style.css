@@ -331,11 +331,11 @@ html {
 }
 
 .contact-us {
-  padding: 52px 115px;
+  padding: 4.5rem 1.625rem;
 }
 
 .contact-us .section {
-  padding: 0 85px;
+  padding: 0 14px;
   background-color: #fff;
   background-image: url("../images/Contact-us-image.jpg");
   background-size: cover;
@@ -357,7 +357,8 @@ html {
   line-height: 1.375rem;
   font-weight: normal;
   display: block;
-  width: 570px;
+  width: 100%;
+  max-width: 570px;
   margin: 0 auto;
 }
 
@@ -365,14 +366,9 @@ html {
   padding: 52px 0 80px;
 }
 
-.contact-info {
-  float: left;
-  width: calc(50% - 20px);
-}
-
+.contact-info,
 .contact-form {
-  float: right;
-  width: calc(50% - 20px);
+  width: 100%;
 }
 
 .contact-us .section h4 {
@@ -426,12 +422,7 @@ html {
 }
 
 .form-first-row .input-class {
-  width: calc(50% - 15px);
-  float: left;
-}
-
-.form-first-row .input-class:first-child {
-  margin-right: 26px;
+  width: 100%;
 }
 
 .form-input {
@@ -474,7 +465,7 @@ textarea.form-input {
   cursor: pointer;
   border: 1px solid transparent;
   color: #fff;
-  background-image: linear-gradient(to left,#379F23,#1569B5);
+  background-image: linear-gradient(to right,#379F23,#1569B5);
 }
 
 
@@ -521,6 +512,24 @@ textarea.form-input {
 
   .product:nth-child(odd) {
     margin-right: 20px;
+  }
+
+  .contact-us {
+    padding: 52px 52px;
+  }
+  
+  .contact-us .section {
+    padding: 0 63px;
+  }
+
+  .contact-info {
+    float: left;
+    width: calc(50% - 20px);
+  }
+  
+  .contact-form {
+    float: right;
+    width: calc(50% - 20px);
   }
 }
 
@@ -635,6 +644,22 @@ textarea.form-input {
     margin-right: 0px;
   }
   
+  .contact-us {
+    padding: 52px 115px;
+  }
+  
+  .contact-us .section {
+    padding: 0 85px;
+  }
+
+  .form-first-row .input-class {
+    width: calc(50% - 15px);
+    float: left;
+  }
+  
+  .form-first-row .input-class:first-child {
+    margin-right: 26px;
+  }
 }
 
 
@@ -683,5 +708,13 @@ textarea.form-input {
   .about-text {
     font-size: 1.25rem;
     line-height: 2rem;
+  }
+
+  .contact-us {
+    padding: 52px 160px;
+  }
+  
+  .contact-us .section {
+    padding: 0 120px;
   }
 }

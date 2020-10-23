@@ -331,11 +331,11 @@ html {
 }
 
 .contact-us {
-  padding: 4.5rem 1.625rem;
+  padding: 4.5rem 0;
 }
 
 .contact-us .section {
-  padding: 0 14px;
+  padding: 0 2.5rem;
   background-color: #fff;
   background-image: url("../images/Contact-us-image.jpg");
   background-size: cover;
@@ -541,6 +541,13 @@ textarea.form-input {
   font-weight: 600;
 }
 
+.about-body,
+.contact-body {
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+}
+
 
 
 @media (min-width: 480px) {
@@ -565,11 +572,6 @@ textarea.form-input {
 
   .section h2 {
     margin-bottom: 3.375rem;
-  }
-
-  .about-text {
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
   }
 
   .products-wrapper {
@@ -610,6 +612,10 @@ textarea.form-input {
   .copyright {
     padding: 20px 115px;
   }
+
+  .contact-body {
+    max-width: 100%;
+  } 
 }
 
 
@@ -630,6 +636,10 @@ textarea.form-input {
   .hero-body {
     margin-top: -6rem;
   }
+
+  .about-body {
+    max-width: 100%;
+  } 
 
   .about-image {
     float: left;
@@ -801,8 +811,21 @@ textarea.form-input {
     padding: 20px 160px;
   }
 
+  .header-container {
+    max-width: 1340px;
+    display: block;
+    margin: 0 auto;
+  }
+
   .hero-body {
+    position: relative;
     padding: 0px 280px;
+  }
+
+  .hero-body-inner {
+    position: relative;
+    width: 970px;
+    margin: 0 auto;
   }
 
   .section {
@@ -819,6 +842,12 @@ textarea.form-input {
     line-height: 3.4375rem;
   }
 
+  .about-us {
+    max-width: 970px;
+    display: block;
+    margin: 0 auto;
+  }
+
   .about-text {
     font-size: 1.25rem;
     line-height: 2rem;
@@ -830,6 +859,14 @@ textarea.form-input {
   
   .contact-us .section {
     padding: 0 120px;
+    max-width: 1090px;
+    margin: 0 auto;
+  }
+
+  .contact-body {
+    max-width: 970px;
+    display: block;
+    margin: 0 auto;
   }
 
   .footer {
@@ -838,5 +875,13 @@ textarea.form-input {
 
   .copyright {
     padding: 20px 280px;
+  }
+
+  .services-wrapper,
+  .footer-inner,
+  .copyright-inner {
+    max-width: 970px;
+    display: block;
+    margin: 0 auto;
   }
 }
